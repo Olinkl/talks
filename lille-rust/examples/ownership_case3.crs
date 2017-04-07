@@ -1,0 +1,12 @@
+#!/usr/bin/env run-cargo-script
+
+fn main() {
+    let valerian_cocktail = vec![10];
+    fruit_shaker(valerian_cocktail);
+    //println!("{:?}", valerian_cocktail);
+}
+
+fn fruit_shaker(vec: Vec<i64>) {
+    println!("shake : {:?}", vec);
+    // vec freed here
+}

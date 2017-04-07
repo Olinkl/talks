@@ -1,0 +1,32 @@
+#!/usr/bin/env run-cargo-script
+
+
+
+fn main() {
+
+    macro_rules! vec_of_strings {
+        ($($x:expr),*) => (vec![$($x.to_string()),*]);
+    }
+
+    // Rhonda prepare a cocktail and give it to Valerian
+    let valerian_cocktail = vec_of_strings!["gin","tonic"];
+
+    //-- error 1
+    //let laureline_cocktail = valerian_cocktail;
+    //let bender_cocktail = valerian_cocktail;
+
+    //-- soluce 1
+    //let laureline_cocktail = valerian_cocktail;
+    //let bender_cocktail = laureline_cocktail;
+
+    //-- error 2
+    // Valerian want to clone is cocktail but already give to Laureline
+    //let laureline_cocktail = valerian_cocktail;
+    //let bender_cocktail = valerian_cocktail.clone();
+
+    //-- soluce 2
+    //let laureline_cocktail = valerian_cocktail.clone();
+    //let bender_cocktail = valerian_cocktail;
+    //println!("{:?}", bender_cocktail);
+
+}

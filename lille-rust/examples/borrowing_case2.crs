@@ -1,0 +1,16 @@
+#!/usr/bin/env run-cargo-script
+
+fn main() {
+
+    // drink centiliter of cocktail
+
+    let mut valerian_cocktail = vec![30];
+    drink(&mut valerian_cocktail);
+    drink(&mut valerian_cocktail);
+    drink(&mut valerian_cocktail);
+    println!("{}", valerian_cocktail[0]);
+}
+
+fn drink(vec: &mut Vec<i32>) {
+    vec[0] -= 1;
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env run-cargo-script
+
+fn main() {
+    macro_rules! vec_of_strings {
+        ($($x:expr),*) => (vec![$($x.to_string()),*]);
+    }
+
+    // sample 1
+    //let mut valerian_cocktail = vec![10];
+    //valerian_cocktail[0] -= 1;
+    //println!("valerian: {}", valerian_cocktail[0]);
+
+    // sample 2
+    //let laureline_cocktail = &mut valerian_cocktail;
+    //laureline_cocktail[0] -= 1;
+    //println!("valerian: {} et laureline: {}", valerian_cocktail[0], laureline_cocktail[0]);
+    //valerian_cocktail[0] -= 1;
+
+    let mut valerian_cocktail = vec_of_strings!["tonic","gin"];
+    let laureline_cocktail = &mut valerian_cocktail;
+    println!("{} {}", valerian_cocktail[0], laureline_cocktail[0]);
+    valerian_cocktail.push("lemon".to_string());
+}

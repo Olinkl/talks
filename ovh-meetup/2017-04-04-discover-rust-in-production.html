@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discover Rust in production</title>
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body {
+        font-family: 'Fira Sans', sans-serif;
+        color: #0a6270;
+      }
+      h1 {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: normal;
+        color: #0a6270
+      }
+      h2, h3 {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: normal;
+        color: #ffcd00
+      }
+      h4 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+        color: #ffffff
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .background-logo {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+background-image: url(images/background-meetup-ovh.png)
+
+<img src="images/logo-ovh-meetup.png" alt="logo-ovh-meetup" height="180" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+# Discover Rust in production @OVH
+####4 april 2017 - Lille
+
+---
+# Talks
+
+1. Rust in production at OVH
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Talks
+
+1. Rust in production at OVH
+
+2. Rust, Lending system, enter The borrow checker 
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Talks
+
+1. Rust in production at OVH
+
+2. Rust, Lending system, enter The borrow checker 
+
+3. Servo
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Hi
+<img src="https://secure.meetupstatic.com/photos/member/e/9/9/5/highres_253379797.jpeg" alt="logo-ovh-meetup" height="150" />
+
+## Adrien Bensaïbi - DevOps @OVH 
+- Working on IP Loadbalancing Next-Gen
+- Proud to be part of Lille Rust community
+- Passionate about server performance, scalable architecture, and programming langages
+- 2017 = Rust, Elixir/Erlang, Solidity
+- Twitter @olinkloo
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+#OVH
+<img src="images/global-ovh.png" alt="global-ovh" height="400" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" />
+
+---
+#OVH Sunrise
+
+<img src="images/ovh-sunrise-sslgateway.png" alt="sunrise" height="370" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Rust - try 1
+## IP Loadbalancing NextGen
+## SSL Gateway
+## Metrics
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Tiny tools
+.center[![tiny tool](images/tiny-vim.jpg)]
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Tiny tools
+
+* simple binary
+* use-case focused
+* no huge environment (easy to configure)
+* simple logging
+* predictable
+* easy to restrict
+* easy to scale
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# What we do
+
+- 150 000 VM public cloud
+- 200 000 VM private cloud
+- 270 000 Servers
+
+1. deal with huge volume of datas.
+2. in a safe manner.
+3. in realtime, because we have to act fast.
+
+<img src="images/three-gorges.jpg" alt="three-gorges" height="400" />
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Challenge
+
+metric collector had a significante otherhead on system
+
+# We tried
+* scollector
+* tcollector
+* snap
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Analyse
+* CSV parser
+* too much modules
+
+<img src="images/bottleneck.png" alt="bottleneck" height="300" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Metric team comes with a solution
+Beamium + HAProxy exporter
+
+<img src="images/retour-vers-le-futur.jpg" alt="logo-ovh-meetup" height="300" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Result
+* ~30% CPU on the system, now 0.6%, with filtering !
+* 800k points/s sends to OVH Metrics
+* 1,8M points/s per beamium thread
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Rust - try 2
+## CDN
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# Challenge
+lot's of purge request to invalidate files.
+
+we break limite of our purge module.
+<img class="purge" src="images/lostart.jpg" alt="logo" height="300" />
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# Change design
+* ~12k purge per hour
+* complexe rules of purges, lead to invalidate 300 000 files
+* remove files faster with an <span>index</span>
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# Work
+* At first, i tend to develop index in C
+* But writing safe C, in a C system is error prone
+* Well i develop some parts in Rust
+
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Results
+## -
+* has to duplicate struct declaration
+* build system does not fit, some work to do
+
+## +
+- FFI
+- fast development cycles
+- crates !
+
+## project
+* develop faster
+* could easily handle all this purges
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Rewrite everything in Rust now ?
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Rewrite everything in Rust now ?
+No, we do not
+* be modest
+* strong system are less exposed to bad events
+* translate is maybe a better approche [Corrode](https://github.com/jameysharp/corrode)
+* experiences
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# But
+If you start a new system
+Today:
+- integrate with existing systems, to make it safer.
+- reducing time to production and maintenance, in case you work in C.
+- for speed with high level langage
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+background-image: url(images/starship-troopers.jpg)
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# Links
+projects use in ovh
+* [Beamium](https://github.com/runabove/beamium.git), a fast metric collector
+* [Flowgger](https://github.com/jedisct1/flowgger.git), a fast log collector
+* [ovh-rs](https://github.com/Olinkl/ovh-rs), self promotion
+* [edgeDNS](https://github.com/jedisct1/edgedns), a DNS cache
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+---
+# OVH sunrise
+* [SSLGateway](https://www.ovh.com/fr/ssl-gateway/)
+* [IP Loadbalancing NextGen](https://www.slideshare.net/ovhcom/getting-started-with-my-nextgen-ip-load-balancing)
+* [Metrics](https://www.ovh.com/fr/data-platforms/metrics/)
+* [CDN](https://www.ovh.com/fr/cdn/infrastructure/)
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+
+---
+# Community
+* [Forum](https://community.ovh.com/)
+* [Meetup](https://www.meetup.com/fr-FR/OVH-Meetup/)
+
+# Careers
+* [OVH careers](https://www.ovh.com/fr/careers/)
+
+<img class="background-logo" src="images/logo-ovh-pages.jpeg" alt="logo-ovh-meetup" height="150" />
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

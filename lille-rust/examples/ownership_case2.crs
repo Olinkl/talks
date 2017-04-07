@@ -1,0 +1,16 @@
+#!/usr/bin/env run-cargo-script
+//! This is a regular crate doc comment, but it also contains a partial
+//! Cargo manifest.  Note the use of a *fenced* code block, and the
+//! `cargo` "language".
+
+fn main() {
+    macro_rules! vec_of_strings {
+        ($($x:expr),*) => (vec![$($x.to_string()),*]);
+    }
+
+    let valerian_cocktail = vec!["passion fruit","rhum"];
+    let laureline_cocktail = valerian_cocktail;
+    
+    // -- error, already moved
+    println!("{:?}", valerian_cocktail);
+}
