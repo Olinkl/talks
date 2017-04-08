@@ -19,6 +19,9 @@
 * markdown
 * commercial, going to prezi model with rad tools
 
+### [Spectacle](https://github.com/FormidableLabs/spectacle)
+* TO LOOK
+
 ### [Deck.js](http://imakewebthings.com/deck.js/#intro)
 * navbar is cool
 * a little heavy
@@ -35,6 +38,9 @@
 ### [Beamer](http://web.mit.edu/rsi/www/pdfs/beamer-tutorial.pdf)
 * tex
 * heavy install and build conf
+
+### [VIMDeck](https://github.com/tybenz/vimdeck)
+* <3 vim
 
 ### [Flowtime](https://github.com/marcolago/flowtime.js)
 * up-down fragments
@@ -64,6 +70,9 @@
 ### slidy
 * seems basic
 * raw html editing
+
+### [WebSlides](https://github.com/webslides/webslides/)
+* TO LOOK
 
 ### [elm-slides](https://github.com/xarvh/elm-slides)
 * too young
