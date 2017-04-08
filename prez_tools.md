@@ -80,7 +80,7 @@
 ## Related tools
 
 ### DeckTape
-# transform HTML into PDF
+transform HTML into PDF
 
 ### Pandoc
 * transform everything into everything
