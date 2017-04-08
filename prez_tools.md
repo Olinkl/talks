@@ -10,19 +10,20 @@
 
 ## REX
 
-### RemarkJS
+### [RemarkJS](https://github.com/gnab/remark)
 * simple markdown
 
-### Reveal.js
+### [Reveal.js](https://github.com/hakimel/reveal.js)
 * transitions
 * fragments
 * markdown
-* -, heavily commercial, and rad tools
+* commercial, going to prezi model with rad tools
 
-### Deck.js
+### [Deck.js](http://imakewebthings.com/deck.js/#intro)
 * navbar is cool
+* a little heavy
 
-### Shower https://github.com/shower/shower
+### [Shower](https://github.com/shower/shower)
 * nice otherview
 * built-in progress bar
 
@@ -31,29 +32,48 @@
 * progress bar
 * modules and themes
 
-### Beamer
+### [Beamer](http://web.mit.edu/rsi/www/pdfs/beamer-tutorial.pdf)
 * tex
 * heavy install and build conf
 
-### Flowtime [https://github.com/marcolago/flowtime.js]
+### [Flowtime](https://github.com/marcolago/flowtime.js)
 * up-down fragments
 * left-right slides
 * but 2d space slide change confusing
 
-### Impress.js
+### [Impress.js](https://github.com/impress/impress.js/)
 * transition make me sick
 
-### PowerPoint
+### [rustdoc](http://rustbyexample.com/meta/doc.html)
+* [sample prez](https://github.com/steveklabnik/history-of-rust)
+* markdown
+* not much feature, but seems ok
+
+### [PowerPoint](https://office.live.com/start/PowerPoint.aspx)
 * not easy git integration
 * fu windows or wine
+* licence
 
-### rustdoc
-* too much 
+### [md2googleslides](https://github.com/googlesamples/md2googleslides)
+* did not feel right to me, be dependent of google services
+
+### [Prezi](https://prezi.com/fr/)
+* cool rad
+* licence
 
 ### slidy
 * seems basic
 * raw html editing
 
+### [elm-slides](https://github.com/xarvh/elm-slides)
+* too young
+
 ## Related tools
 
-DeckTape => transform HTML into PDF
+### DeckTape
+# transform HTML into PDF
+
+### Pandoc
+* transform everything into everything
+* haskell system
+
