@@ -77,6 +77,9 @@
 ### [elm-slides](https://github.com/xarvh/elm-slides)
 * too young
 
+### [struct](http://strut.io/)
+* discovered looking YunoHost
+
 ## Related tools
 
 ### DeckTape
